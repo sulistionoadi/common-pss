@@ -7,19 +7,10 @@
 
 	<groupId>com.sulistionoadi.ngoprek</groupId>
 	<artifactId>common-pss</artifactId>
-	<version>1.0.0</version>	
+	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
-	<name>Common PSS Filter</name>        
-	<description>Common Class and Query Helper for Paging, Sorting and Searching Datatables</description>	
-
-	<dependencies>
-		<dependency>
-		    <groupId>org.projectlombok</groupId>
-		    <artifactId>lombok</artifactId>
-		    <version>1.18.12</version>
-		    <scope>provided</scope>
-		</dependency>
-	</dependencies>
+	<name>Common PSS Filter</name>
+	<description>Common Class and Query Helper for Paging, Sorting and Searching Datatables</description>
 
 </project>
