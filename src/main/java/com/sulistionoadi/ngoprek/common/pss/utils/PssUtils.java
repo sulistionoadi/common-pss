@@ -1,4 +1,4 @@
-package com.sulistionoadi.ngoprek.common.pss.helper;
+package com.sulistionoadi.ngoprek.common.pss.utils;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -8,14 +8,14 @@ import java.util.Map;
 import com.sulistionoadi.ngoprek.common.pss.constant.PssConstant;
 import com.sulistionoadi.ngoprek.common.pss.dto.PssFilter;
 
-public class PssHelper {
+public class PssUtils {
 
 	public static Map<String, Object> generateCountPssParameter(PssFilter filter) {
 		validateFilterObject(filter);
 		
 		Map<String, Object> param = new HashMap<String, Object>();
 		if(hasFilterSearchValue(filter)) {
-			param.put("filter", "%" + filter.getSearch().get(PssConstant.PSS_SEARCH_VAL) + "%");			
+			param.put("filter", "%" + filter.getSearch().get(PssConstant.PSS_SEARCH_VAL).toLowerCase() + "%");			
 		}
 		
 		return param;
@@ -28,7 +28,7 @@ public class PssHelper {
 		
 		Map<String, Object> param = new HashMap<String, Object>();
 		if(hasFilterSearchValue(filter)) {
-			param.put("filter", "%" + filter.getSearch().get(PssConstant.PSS_SEARCH_VAL) + "%");			
+			param.put("filter", "%" + filter.getSearch().get(PssConstant.PSS_SEARCH_VAL).toLowerCase() + "%");			
 		}
 
 		param.put("start_row", filter.getStart() + 1);
@@ -37,7 +37,7 @@ public class PssHelper {
 		return param;
 	}
 	
-	public static String getOrderBy(PssFilter filter, String defaultOrderBy, String...dataColumns) {
+	public static String getOrderBy(PssFilter filter, String defaultOrderBy, String[] dataColumns) {
 		validateFilterObject(filter);
 		
 		if(defaultOrderBy == null || defaultOrderBy.replaceAll("\\s+","").length() < 1) {
