@@ -53,7 +53,7 @@ public class PssUtils {
 
 			try {
 				orderBy = dataColumns[Integer.parseInt(colidx)];
-				orderBy = orderBy.concat(dir);				
+				orderBy = orderBy.concat(" ").concat(dir);				
 			} catch(ArrayIndexOutOfBoundsException ex) {
 				throw new IllegalArgumentException("Invalid providing data columns, cannot get data columns at index " + colidx);
 			}
