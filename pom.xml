@@ -13,4 +13,10 @@
 	<name>Common PSS Filter</name>
 	<description>Common Class and Query Helper for Paging, Sorting and Searching Datatables</description>
 
+	<properties>
+		<java.version>1.8</java.version>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+	</properties>
+	
 </project>
