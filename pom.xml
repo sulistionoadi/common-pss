@@ -7,7 +7,7 @@
 
 	<groupId>com.sulistionoadi.ngoprek</groupId>
 	<artifactId>common-pss</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<packaging>jar</packaging>
 
 	<name>Common PSS Filter</name>
