@@ -28,6 +28,17 @@
 		<url>https://github.com/sulistionoadi/common-pss</url>
 		<tag>@{project.version}</tag>
 	</scm>
+
+	<distributionManagement>
+		<repository>
+			<id>comsuRepo</id>
+			<url>${comsu.repo.url}</url>
+		</repository>
+		<snapshotRepository>
+			<id>comsuRepo</id>
+			<url>${comsu.repo.url}</url>
+		</snapshotRepository>
+	</distributionManagement>
 	
 	<build>
 		<plugins>
