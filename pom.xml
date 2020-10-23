@@ -5,7 +5,7 @@
 
 	<groupId>com.sulistionoadi.ngoprek</groupId>
 	<artifactId>common-pss</artifactId>
-	<version>1.0.2</version>
+	<version>1.0.3-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>Common PSS Filter</name>
@@ -26,7 +26,7 @@
 		<developerConnection>scm:git:git@github.com:sulistionoadi/common-pss.git</developerConnection>
 		<connection>scm:git:git@github.com:sulistionoadi/common-pss.git</connection>
 		<url>https://github.com/sulistionoadi/common-pss</url>
-		<tag>1.0.2</tag>
+		<tag>@{project.version}</tag>
 	</scm>
 
 	<distributionManagement>
